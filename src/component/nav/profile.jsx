@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axiosInstance, { endPoints } from '../../api/axios';
 import { removeUser, userSelector } from '../../redux/slices/user-slice';
 
@@ -43,7 +43,10 @@ export const Profile = () => {
                 </a>
               </li>
               <li>
-                <button >Settings</button>
+                <Link to={'/connections'}>Connections</Link>
+              </li>
+              <li>
+                <Link to="requests">Requests</Link>
               </li>
               <li>
                 <button onClick={logout}>Logout</button>

@@ -7,7 +7,7 @@ import { SearchBar } from './search-bar';
 
 export const Navbar = () => {
   return (
-    <nav className="navbar bg-base-200">
+    <nav className="navbar bg-base-200 sticky top-0 z-100">
       <NavbarContainer>
         <Logo />
         <div className="gap-2 flex">

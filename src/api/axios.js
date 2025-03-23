@@ -45,10 +45,13 @@ axiosInstance.interceptors.response.use(
 export const endPoints = {
   auth: {
     login: '/auth/login',
-    logout:"/auth/logout"
+    logout: '/auth/logout',
   },
-  user:{
-    profile:"/profile/view"
-  }
+  user: {
+    profile: '/profile/view',
+    feed: '/user/feed',
+    connection: '/user/connections',
+    requests: '/user/requests/received',
+  },
 };
 export default axiosInstance;

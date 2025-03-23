@@ -25,7 +25,9 @@ export const RoutingBody = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className='mb-50'>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
