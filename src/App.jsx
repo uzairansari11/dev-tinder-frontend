@@ -1,15 +1,12 @@
-// src/App.jsx
-
+import { ReduxProvider } from './redux/redux-provider';
 import { RoutingConfiguration } from './routing/routing';
 
 function App() {
   return (
-    <div className="min-h-screen bg-base-100 text-base-content">
-      <RoutingConfiguration />
-      {/*
-      <main className="container mx-auto p-4">
+    <div className="min-h-screen bg-base-300 text-base-content">
+      <ReduxProvider>
         <RoutingConfiguration />
-      </main> */}
+      </ReduxProvider>
     </div>
   );
 }
